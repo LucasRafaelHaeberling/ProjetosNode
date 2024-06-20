@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva com Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;/*uma altura de 100vh corresponde a 100% da página total, */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            main {
+                flex: 2;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Site Responsivo</h1>
+        </header>
+        <main>
+            <h2>Bem-vindo ao meu site!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non libero nec arcu tincidunt auctor vel
+                vel quam.</p>
+        </main>
+        <footer>
+            <p>&copy; 2023 Meu Site Responsivo</p>
+        </footer>
+    </div>
+</body>
+
+</html>

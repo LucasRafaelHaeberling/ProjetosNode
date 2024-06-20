@@ -1,0 +1,18 @@
+/* Adicione estilos únicos para cada novo parágrafo aqui */
+.paragraph-style1 {
+    background-color: #ff9999;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.paragraph-style2 {
+    background-color: #99ccff;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.paragraph-style3 {
+    background-color: #ccff99;
+    padding: 10px;
+    margin: 10px 0;
+}

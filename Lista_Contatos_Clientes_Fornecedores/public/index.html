@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <!-- Inclusão do CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Lista Contato</h1>
+        <form id="contatoForm" class="mb-3">
+            <div class="mb-3">
+                <input type="text" id="nome" class="form-control" placeholder="Nome do Contato" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" id="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="telefone" class="form-control" placeholder="Telefone" required>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="cnpj" class="form-control" placeholder="CNPJ" required>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="cpf" class="form-control" placeholder="CPF" required>
+            </div>
+            
+            <button type="button" id="adicionarContatoBtn" class="btn btn-primary">Adicionar Contato</button>
+            <button type="button" id="atualizarContatoBtn" class="btn btn-info mb-3 d-none">Atualizar Contato</button>
+        </form>
+        </form>
+        <div id="contatosListados" class="list-group"></div>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+</body>
+</html>

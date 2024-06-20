@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Screen refere-se a exibição-->
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+    <link rel="stylesheet" type="text/css" media="print" href="estilo-impressao.css">
+    <!-- print refere-se a impressão -->
+    <title>Exemplo de Estilo Responsivo</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        /* Estilo para telas grandes (desktops) */
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Estilo para telas médias (tablets) */
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: #9b0d0d;
+            }
+
+            header {
+                background-color: #1bd218;
+                color: #fff;
+                padding: 20px;
+            }
+        }
+
+        /* Estilo para telas pequenas (smartphones) */
+        @media screen and (max-width: 480px) {
+            body {
+                background-color: #1616b7;
+            }
+
+            header {
+                background-color: #def011;
+                color: #040000;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Minha Página Responsiva</h1>
+    </header>
+</body>
+
+</html>
