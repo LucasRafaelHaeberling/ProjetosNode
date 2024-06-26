@@ -3,9 +3,9 @@ session_start();
 
 // Configuração do banco de dados
 $host = 'sql209.byetcluster.com';
-    $db = 'if0_36715592_Login';
-    $user = 'if0_36715592';
-    $pass = 'CyX1bOPsHC8MG';
+$db = 'if0_36715592_Login';
+$user = 'if0_36715592';
+$pass = 'CyX1bOPsHC8MG';
 
 // Conectando ao banco de dados usando mysqli
 $conn = new mysqli($host, $user, $pass, $db);
@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $conn->real_escape_string($_POST['username']);
     $password = $conn->real_escape_string($_POST['password']);
-
+    
     // Consulta para verificar as credenciais do usuário
     $sql = "SELECT * FROM usuarios WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
